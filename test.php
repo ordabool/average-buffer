@@ -16,3 +16,28 @@ echo "first 2 elements: \n";
 echo $cycArr->getElementAtIndex(0) . "\n";
 echo $cycArr->getElementAtIndex(1) . "\n";
 
+echo "---------------- AverageBuffer Test ---------------- \n";
+
+$avgBuffer = new AverageBuffer(10);
+
+for ($i = 10; $i < 20; $i++) {
+    $avgBuffer->addSample($i + 1);
+}
+
+echo $avgBuffer;
+
+echo "--------------------------------- \n";
+
+$avgBuffer2 = new AverageBuffer(8);
+$avgBuffer2->addSample(10);
+$avgBuffer2->addSample(40);
+$avgBuffer2->addSample(30);
+$avgBuffer2->addSample(44);
+$avgBuffer2->addSample(20);
+$avgBuffer2->addSample(50);
+$avgBuffer2->addSample(35);
+$avgBuffer2->addSample(55);
+
+echo $avgBuffer2;
+echo "Upper: {$avgBuffer2->getUpperQuarterAverage()} \n";
+echo "Lower: {$avgBuffer2->getLowerQuarterAverage()} \n";
