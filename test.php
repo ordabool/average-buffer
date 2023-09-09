@@ -6,7 +6,7 @@ $cycArr = new CyclicArray(10);
 
 echo "---------------- CyclicArray Test ---------------- \n";
 
-for ($i = 0; $i < 12; $i++) {
+for ($i = 0; $i < 22; $i++) {
     $cycArr->append($i + 1);
 }
 
@@ -20,7 +20,7 @@ echo "---------------- AverageBuffer Test ---------------- \n";
 
 $avgBuffer = new AverageBuffer(10);
 
-for ($i = 10; $i < 20; $i++) {
+for ($i = 10; $i < 23; $i++) {
     $avgBuffer->addSample($i + 1);
 }
 

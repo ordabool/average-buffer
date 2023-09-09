@@ -1,9 +1,17 @@
 <?php
 
+// TODO: Add class description 
+// TODO: Write JavaDoc style documentation
+// TODO: public/private fields and functions
+// TODO: Add time complexities for functions
+// TODO: Write calculated tests (with expected output)
+// TODO: Set debugger and check memory usage and especially the clear() func!!!
+// TODO: Ask about the implementation of the clear() func - delete or reset?
+
 class AverageBuffer
 {
-    private $sumForever = 0;
-    private $elementsCountForever = 0;
+    private $sampleSumForever = 0;
+    private $sampleCountForever = 0;
     private $size;
     private $cyclicArray;
 
@@ -17,8 +25,7 @@ class AverageBuffer
     {
         $str = '';
         for ($i = 0; $i < $this->cyclicArray->getSize(); $i++) {
-            $cyclicIndex = $this->cyclicArray->getCyclicIndex($i);
-            $str .= "CyclicArray[{$cyclicIndex}] = {$this->cyclicArray->getElementAtIndex($cyclicIndex)} \n";
+            $str .= "AverageBuffer[{$i}] = {$this->cyclicArray->getElementAtIndex($i)} \n";
         }
         return $str;
     }
@@ -26,49 +33,46 @@ class AverageBuffer
     function addSample($sample)
     {
         $this->cyclicArray->append($sample);
-        $this->sumForever += $sample;
-        $this->elementsCountForever++;
+        $this->sampleSumForever += $sample;
+        $this->sampleCountForever++;
     }
 
     function getAverage()
     {
-        $elementsCount = $this->cyclicArray->getSize();
-        if ($elementsCount == 0) {
+        $sampleCount = $this->cyclicArray->getSize();
+        if ($sampleCount == 0) {
             return 0;
         }
         $sum = 0;
-        for ($i = 0; $i < $this->cyclicArray->getSize(); $i++) {
+        for ($i = 0; $i < $sampleCount; $i++) {
             $sum += $this->cyclicArray->getElementAtIndex($i);
         }
-        return $sum / $elementsCount;
+        return $sum / $sampleCount;
     }
 
     function getAverageForever()
     {
-        if ($this->elementsCountForever == 0) {
+        if ($this->sampleCountForever == 0) {
             return 0;
         }
-        return $this->sumForever / $this->elementsCountForever;
+        return $this->sampleSumForever / $this->sampleCountForever;
     }
 
-    function getElementCountInQuarter()
-    {
-        return floor($this->cyclicArray->getSize() / 4);
-    }
-
+    // TODO: Change isUpper to enum instead of bool
     function getQuarterAverage($isUpper)
     {
-        $elementCountInQuarter = $this->getElementCountInQuarter();
+        $elementCountInQuarter = floor($this->cyclicArray->getSize() * 0.25);
         if ($elementCountInQuarter == 0) {
             return 0;
         }
         $sum = 0;
+        $lastElementIndex = $this->cyclicArray->getSize() - 1;
         for ($i = 0; $i < $elementCountInQuarter; $i++) {
-            $index = $isUpper ? ($this->cyclicArray->getSize() - $i - 1) : $i;
+            $index = $isUpper ? ($lastElementIndex - $i) : $i;
             $sum += $this->cyclicArray->getElementAtIndex($index);
-            echo $this->cyclicArray->getElementAtIndex($index) . ",";
+            echo $this->cyclicArray->getElementAtIndex($index) . ","; // TODO: remove
         }
-        echo "\n";
+        echo "\n"; // TODO: remove
         return $sum / $elementCountInQuarter;
     }
 
@@ -86,8 +90,8 @@ class AverageBuffer
     {
         unset($this->cyclicArray);
         $this->cyclicArray = new CyclicArray($this->size);
-        $this->sumForever = 0;
-        $this->elementsCountForever = 0;
+        $this->sampleSumForever = 0;
+        $this->sampleCountForever = 0;
     }
 }
 
@@ -112,10 +116,10 @@ class CyclicArray
             $this->arraySize++;
         } else {
             $this->data[$this->startIndex] = $value;
-            $this->startIndex++;
+            $this->startIndex = $this->getCyclicIndex(1);
         }
     }
-    function getCyclicIndex($i)
+    private function getCyclicIndex($i)
     {
         return ($this->startIndex + $i) % $this->arraySize;
     }
@@ -124,6 +128,7 @@ class CyclicArray
         $cyclicIndex = $this->getCyclicIndex($i);
         return ($cyclicIndex < $this->arraySize) ? $this->data[$cyclicIndex] : null;
     }
+    // TODO: try to make the same as getting a regular array length
     function getSize()
     {
         return $this->arraySize;
