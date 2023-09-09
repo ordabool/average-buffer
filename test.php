@@ -26,6 +26,10 @@ for ($i = 10; $i < 23; $i++) {
 
 echo $avgBuffer;
 
+echo "--------------- clear() ------------------ \n";
+echo $avgBuffer;
+$avgBuffer->clear();
+
 echo "--------------------------------- \n";
 
 $avgBuffer2 = new AverageBuffer(8);

@@ -5,10 +5,24 @@
 // TODO: public/private fields and functions
 // TODO: Add time complexities for functions
 // TODO: Write calculated tests (with expected output)
-// TODO: Set debugger and check memory usage and especially the clear() func!!!
 // TODO: Ask about the implementation of the clear() func - delete or reset?
-// TODO: Change properties to start with underscore (maybe)
 
+
+// #####################################################################################################################
+// ###                                                                                                               ###
+// ###  AverageBuffer Class                                                                                          ###
+// ###                                                                                                               ###
+// ###  This class implements an AverageBuffer. The AverageBuffer allows to save up to $size numerical samples,      ###
+// ###  and then get different averages for the given samples (i.e. Forever, UpperQuarter..)                         ###
+// ###                                                                                                               ###
+// ###  Class properties:                                                                                            ###
+// ###  $sampleSumForever   - sums all of the samples that are inserted into the AverageBuffer                       ###
+// ###  $sampleCountForever - counts all of the samples that are inserted into the AverageBuffer                     ###
+// ###  $size               - holds the size of the AverageBuffer                                                    ###
+// ###                        There can be less samples than $size at a given moment, but not more                   ###
+// ###  $cyclicArray        - an instance of CyclicArray that stores the samples                                     ###
+// ###                                                                                                               ###
+// #####################################################################################################################
 class AverageBuffer
 {
     private $sampleSumForever = 0;
@@ -96,16 +110,34 @@ class AverageBuffer
     }
 }
 
-
-// TODO: Implemet ArrayAccess as shown here: 
-// https://www.php.net/manual/en/class.arrayaccess.php
-
+// #####################################################################################################################
+// ###                                                                                                               ###
+// ###  CyclicArray Class                                                                                            ###
+// ###                                                                                                               ###
+// ###  This class implements an array that holds up to $maxSize elements.                                           ###
+// ###  The idea is to make the array cyclic, so if it's full, it will regard another element as the $startIndex,    ###
+// ###  which means it doesn't have to be 0 like in a traditional array.                                             ###
+// ###  Thus, the CyclicArray can always hold up to $maxSize of elements, without needing to use operations such     ###
+// ###  as array_shift and array_slice.                                                                              ###
+// ###                                                                                                               ###
+// ###  CyclicArray also implements the Countable and ArrayAccess interfaces, in order to function just like a       ###
+// ###  traditional array, i.e. CyclicArray[0] will point to the element that's in $startIndex, because it is        ###
+// ###  really the first element, even if $startIndex != 0                                                           ###
+// ###                                                                                                               ###
+// ###  Class properties:                                                                                            ###
+// ###  $startIndex  - the index of the first element                                                                ###
+// ###  $arraySize   - how many elements are in the array                                                            ###
+// ###  $maxSize     - the max amount of permitted elements in the array                                             ###
+// ###                 Once $arraySize = $maxSize, the array will replace older elements upon inserting new ones     ###
+// ###  $data        - a primitive array that holds all of the elements in the CyclicArray                           ###
+// ###                                                                                                               ###
+// #####################################################################################################################
 class CyclicArray implements Countable, ArrayAccess
 {
     private $startIndex = 0;
     private $arraySize = 0;
-    private $data;
     private $maxSize;
+    private $data;
     function __construct($maxSize)
     {
         $this->maxSize = $maxSize;
