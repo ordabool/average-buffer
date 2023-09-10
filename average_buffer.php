@@ -1,42 +1,49 @@
 <?php
 
-// TODO: Add class description 
-// TODO: Write JavaDoc style documentation
-// TODO: public/private fields and functions
 // TODO: Add time complexities for functions
 // TODO: Write calculated tests (with expected output)
-// TODO: Ask about the implementation of the clear() func - delete or reset?
 
-
-// #####################################################################################################################
-// ###                                                                                                               ###
-// ###  AverageBuffer Class                                                                                          ###
-// ###                                                                                                               ###
-// ###  This class implements an AverageBuffer. The AverageBuffer allows to save up to $size numerical samples,      ###
-// ###  and then get different averages for the given samples (i.e. Forever, UpperQuarter..)                         ###
-// ###                                                                                                               ###
-// ###  Class properties:                                                                                            ###
-// ###  $sampleSumForever   - sums all of the samples that are inserted into the AverageBuffer                       ###
-// ###  $sampleCountForever - counts all of the samples that are inserted into the AverageBuffer                     ###
-// ###  $size               - holds the size of the AverageBuffer                                                    ###
-// ###                        There can be less samples than $size at a given moment, but not more                   ###
-// ###  $cyclicArray        - an instance of CyclicArray that stores the samples                                     ###
-// ###                                                                                                               ###
-// #####################################################################################################################
+/**
+ * 
+ * AverageBuffer Class 
+ * 
+ * This class implements an AverageBuffer. The AverageBuffer allows to save up to $size numerical samples,
+ * and then get different averages for the given samples (i.e. Forever, UpperQuarter..)
+ * 
+ * Class properties:
+ * $sampleSumForever   - sums all of the samples that are inserted into the AverageBuffer
+ * $sampleCountForever - counts all of the samples that are inserted into the AverageBuffer
+ * $size               - holds the size of the AverageBuffer
+ *                       There can be less samples than $size at a given moment, but not more
+ * $cyclicArray        - an instance of CyclicArray that stores the samples
+ * 
+ */
 class AverageBuffer
 {
-    private $sampleSumForever = 0;
-    private $sampleCountForever = 0;
-    private $size;
-    private $cyclicArray;
+    // --- Private properties ------------------------------------------------------------------------------------------
+    private float $sampleSumForever = 0;
+    private int $sampleCountForever = 0;
+    private int $size;
+    private CyclicArray $cyclicArray;
 
-    function __construct($size)
+    // --- Public API functions ----------------------------------------------------------------------------------------
+    /**
+     * Constructs the AverageBuffer with a specified size
+     * 
+     * @param int $size - the size of the AverageBuffer
+     */
+    function __construct(int $size)
     {
         $this->size = $size;
         $this->cyclicArray = new CyclicArray($size);
     }
 
-    function __toString()
+    /**
+     * Get a string representation of the AverageBuffer
+     *
+     * @return string representation of the AverageBuffer
+     */
+    function __toString(): string
     {
         $str = '';
         for ($i = 0; $i < count($this->cyclicArray); $i++) {
@@ -45,14 +52,27 @@ class AverageBuffer
         return $str;
     }
 
-    function addSample($sample)
+    /**
+     * Adds a new sample to the AverageBuffer. If the AverageBuffer is full, the new sample will replace the oldest
+     * sample
+     * The new sample is added to $sampleSumForever, and increases $sampleCountForever in order to 
+     * support getAverageForever()
+     * 
+     * @param float $sample - the numeric sample to add
+     */
+    function addSample(float $sample): void
     {
         $this->cyclicArray[] = $sample;
         $this->sampleSumForever += $sample;
         $this->sampleCountForever++;
     }
 
-    function getAverage()
+    /**
+     * Get the average of all the samples in AverageBuffer
+     * 
+     * @return float the average of the samples in AverageBuffer
+     */
+    function getAverage(): float
     {
         $sampleCount = count($this->cyclicArray);
         if ($sampleCount == 0) {
@@ -65,7 +85,12 @@ class AverageBuffer
         return $sum / $sampleCount;
     }
 
-    function getAverageForever()
+    /**
+     * Get the average of all the samples that ever was in the AverageBuffer
+     * 
+     * @return float the average of all the samples that ever was in the AverageBuffer
+     */
+    function getAverageForever(): float
     {
         if ($this->sampleCountForever == 0) {
             return 0;
@@ -73,8 +98,13 @@ class AverageBuffer
         return $this->sampleSumForever / $this->sampleCountForever;
     }
 
-    // TODO: Change isUpper to enum instead of bool
-    function getQuarterAverage($isUpper)
+    /**
+     * Get the quarter average for the given type (upper/lower quarter)
+     * 
+     * @param QuarterAverageType $type - the type of the quarter
+     * @return float the average of the quarter in the AverageBuffer
+     */
+    function getQuarterAverage(QuarterAverageType $type): float
     {
         $elementCountInQuarter = floor(count($this->cyclicArray) * 0.25);
         if ($elementCountInQuarter == 0) {
@@ -83,25 +113,36 @@ class AverageBuffer
         $sum = 0;
         $lastElementIndex = count($this->cyclicArray) - 1;
         for ($i = 0; $i < $elementCountInQuarter; $i++) {
-            $index = $isUpper ? ($lastElementIndex - $i) : $i;
+            $index = ($type == QuarterAverageType::Upper) ? ($lastElementIndex - $i) : $i;
             $sum += $this->cyclicArray[$index];
-            echo $this->cyclicArray[$index] . ","; // TODO: remove
         }
-        echo "\n"; // TODO: remove
         return $sum / $elementCountInQuarter;
     }
 
-    function getUpperQuarterAverage()
+    /**
+     * Get the upper quarter average
+     * 
+     * @return float the average of the upper quarter in the AverageBuffer
+     */
+    function getUpperQuarterAverage(): float
     {
-        return $this->getQuarterAverage(true);
+        return $this->getQuarterAverage(QuarterAverageType::Upper);
     }
 
-    function getLowerQuarterAverage()
+    /**
+     * Get the lower quarter average
+     * 
+     * @return float the average of the lower quarter in the AverageBuffer
+     */
+    function getLowerQuarterAverage(): float
     {
-        return $this->getQuarterAverage(false);
+        return $this->getQuarterAverage(QuarterAverageType::Lower);
     }
 
-    function clear()
+    /**
+     * Clear and reset the current AverageBuffer
+     */
+    function clear(): void
     {
         unset($this->cyclicArray);
         $this->cyclicArray = new CyclicArray($this->size);
@@ -110,39 +151,53 @@ class AverageBuffer
     }
 }
 
-// #####################################################################################################################
-// ###                                                                                                               ###
-// ###  CyclicArray Class                                                                                            ###
-// ###                                                                                                               ###
-// ###  This class implements an array that holds up to $maxSize elements.                                           ###
-// ###  The idea is to make the array cyclic, so if it's full, it will regard another element as the $startIndex,    ###
-// ###  which means it doesn't have to be 0 like in a traditional array.                                             ###
-// ###  Thus, the CyclicArray can always hold up to $maxSize of elements, without needing to use operations such     ###
-// ###  as array_shift and array_slice.                                                                              ###
-// ###                                                                                                               ###
-// ###  CyclicArray also implements the Countable and ArrayAccess interfaces, in order to function just like a       ###
-// ###  traditional array, i.e. CyclicArray[0] will point to the element that's in $startIndex, because it is        ###
-// ###  really the first element, even if $startIndex != 0                                                           ###
-// ###                                                                                                               ###
-// ###  Class properties:                                                                                            ###
-// ###  $startIndex  - the index of the first element                                                                ###
-// ###  $arraySize   - how many elements are in the array                                                            ###
-// ###  $maxSize     - the max amount of permitted elements in the array                                             ###
-// ###                 Once $arraySize = $maxSize, the array will replace older elements upon inserting new ones     ###
-// ###  $data        - a primitive array that holds all of the elements in the CyclicArray                           ###
-// ###                                                                                                               ###
-// #####################################################################################################################
-class CyclicArray implements Countable, ArrayAccess
+// Enum of the different quarter average types: upper / lower
+enum QuarterAverageType
 {
-    private $startIndex = 0;
-    private $arraySize = 0;
-    private $maxSize;
-    private $data;
-    function __construct($maxSize)
-    {
-        $this->maxSize = $maxSize;
-    }
-    private function append($value)
+    case Upper;
+    case Lower;
+}
+
+
+/**
+ * 
+ * CyclicArray Class
+ * 
+ * This class implements an array that holds up to $maxSize elements.
+ * The idea is to make the array cyclic, so if it's full, it will regard another element as the $startIndex,
+ * which means it doesn't have to be 0 like in a traditional array.
+ * Thus, the CyclicArray can always hold up to $maxSize of elements, without needing to use operations such
+ * as array_shift and array_slice.
+ * 
+ * CyclicArray also implements the Countable and ArrayAccess interfaces, in order to function just like a
+ * traditional array, i.e. CyclicArray[0] will point to the element that's in $startIndex, because it is
+ * really the first element, even if $startIndex != 0
+ * 
+ * Class properties:
+ * $startIndex  - the index of the first element
+ * $arraySize   - how many elements are in the array
+ * $maxSize     - the max amount of permitted elements in the array
+ *                Once $arraySize = $maxSize, the array will replace older elements upon inserting new ones
+ * $data        - a primitive array that holds all of the elements in the CyclicArray
+ * 
+ */
+class CyclicArray implements ArrayAccess, Countable
+{
+    // --- Private properties ------------------------------------------------------------------------------------------
+    private int $startIndex = 0;
+    private int $arraySize = 0;
+    private int $maxSize;
+    private array $data;
+
+    // --- Private helper functions ------------------------------------------------------------------------------------
+    /**
+     * Append a new element to the CyclicArray
+     * If the CyclicArray is full, replace the oldest element and mark the start of the array as the next oldest element
+     * Otherwise, just append the element to $data in the next available index
+     * 
+     * @param float $value - the value of the new element to append to the CyclicArray
+     */
+    private function append(float $value): void
     {
         if ($this->arraySize < $this->maxSize) {
             $this->data[$this->arraySize] = $value;
@@ -152,45 +207,24 @@ class CyclicArray implements Countable, ArrayAccess
             $this->startIndex = $this->getCyclicIndex(1);
         }
     }
-    public function offsetSet($offset, $value): void
+
+    // --- Public API functions ----------------------------------------------------------------------------------------
+    /**
+     * Constructs the CyclicArray with a maximun size
+     * 
+     * @param int $maxSize - the maximun size of the CyclicArray
+     */
+    function __construct(int $maxSize)
     {
-        if (is_null($offset)) {
-            $this->append($value);
-        } else {
-            if ($this->offsetExists($offset)) {
-                $cyclicIndex = $this->getCyclicIndex($offset);
-                $this->data[$cyclicIndex] = $value;
-            }
-        }
+        $this->maxSize = $maxSize;
     }
-    public function offsetExists($offset): bool
-    {
-        $cyclicIndex = $this->getCyclicIndex($offset);
-        if ($cyclicIndex < $this->arraySize) {
-            return true;
-        }
-        return false;
-    }
-    public function offsetUnset($offset): void
-    {
-        if ($this->offsetExists($offset)) {
-            unset($this->data[$offset]);
-        }
-    }
-    public function offsetGet($offset): mixed
-    {
-        $cyclicIndex = $this->getCyclicIndex($offset);
-        return ($cyclicIndex < $this->arraySize) ? $this->data[$cyclicIndex] : null;
-    }
-    private function getCyclicIndex($i)
-    {
-        return ($this->startIndex + $i) % $this->arraySize;
-    }
-    public function count(): int
-    {
-        return $this->arraySize;
-    }
-    function __toString()
+
+    /**
+     * Get a string representation of the CyclicArray
+     *
+     * @return string representation of the CyclicArray
+     */
+    function __toString(): string
     {
         $str = '';
         for ($i = 0; $i < $this->arraySize; $i++) {
@@ -198,5 +232,93 @@ class CyclicArray implements Countable, ArrayAccess
             $str .= "CyclicArray[{$cyclicIndex}] = {$this->data[$cyclicIndex]} \n";
         }
         return $str;
+    }
+
+    /**
+     * Get the cyclic index for a "regular" index argument. Meaning that if $startIndex = x, 
+     * getCyclicIndex(0) will result to x in a cyclic fashion, and so on
+     * 
+     * @param int $regularIndex - the index to convert to a cyclic index
+     */
+    private function getCyclicIndex(int $regularIndex): int
+    {
+        return ($this->startIndex + $regularIndex) % $this->arraySize;
+    }
+
+    /**
+     * Sets a value at a given offset in the CyclicArray. If no offset is given, just append the value as a new element
+     * 
+     * Part of the ArrayAccess interface
+     * 
+     * @param mixed $offset - the offset to set
+     * @param mixed $value - the value to set
+     */
+    function offsetSet(mixed $offset, mixed $value): void
+    {
+        if (is_null($offset)) {
+            $this->append((float)$value);
+        } else {
+            if ($this->offsetExists($offset)) {
+                $cyclicIndex = $this->getCyclicIndex((int)$offset);
+                $this->data[$cyclicIndex] = (float)$value;
+            }
+        }
+    }
+
+    /**
+     * Checks if the offset exists in the CyclicArray
+     * 
+     * Part of the ArrayAccess interface
+     * 
+     * @param mixed $offset - the offset to check
+     * @return bool true if the offeset exists
+     */
+    function offsetExists(mixed $offset): bool
+    {
+        $cyclicIndex = $this->getCyclicIndex((int)$offset);
+        if ($cyclicIndex < $this->arraySize) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Unset the value in the given offset in the CyclicArray
+     * 
+     * Part of the ArrayAccess interface
+     * 
+     * @param mixed $offset - the offset to unset
+     */
+    function offsetUnset($offset): void
+    {
+        if ($this->offsetExists($offset)) {
+            unset($this->data[$offset]);
+        }
+    }
+
+    /**
+     * Get the value in the given offset in the CyclicArray
+     * 
+     * Part of the ArrayAccess interface
+     * 
+     * @param mixed $offset - the offset to get
+     * @return mixed the value at the given offset, or null if doesn't exist
+     */
+    function offsetGet($offset): mixed
+    {
+        $cyclicIndex = $this->getCyclicIndex((int)$offset);
+        return ($cyclicIndex < $this->arraySize) ? $this->data[$cyclicIndex] : null;
+    }
+
+    /**
+     * Counts the amount of elements in the CyclicArray
+     * 
+     * Part of the Countable interface
+     * 
+     * @return int the amount of elements in the CyclicArray
+     */
+    function count(): int
+    {
+        return $this->arraySize;
     }
 }
