@@ -42,6 +42,8 @@ for ($i = 1; $i <= 25; $i++) {
 echo "AverageBuffer: \n" . $test1;
 echo "getAverage = " . $test1->getAverage() . ", should be 13" . "\n";
 echo "getAverageForever = " . $test1->getAverageForever() . ", should be 13" . "\n";
+echo "getUpperQuarterAverage = " . $test1->getUpperQuarterAverage() . ", should be 22.5" . "\n";
+echo "getLowerQuarterAverage = " . $test1->getLowerQuarterAverage() . ", should be 3.5" . "\n";
 
 echo "------------------------------ Test 2 ----------------------------- \n";
 echo "Building [10, 40, 30, 44, 20, 50, 35, 55]: \n";
@@ -74,3 +76,15 @@ echo "getAverage = " . $test2->getAverage() . ", should be 35.5" . "\n";
 echo "getAverageForever = " . $test2->getAverageForever() . ", should be 35.5" . "\n";
 echo "getUpperQuarterAverage = " . $test2->getUpperQuarterAverage() . ", should be 25" . "\n";
 echo "getLowerQuarterAverage = " . $test2->getLowerQuarterAverage() . ", should be 45" . "\n";
+
+echo "------------------------------ Test 3 ----------------------------- \n";
+echo "Adding 1 .. 25 to AverageBuffer with size 10: \n";
+$test3 = new AverageBuffer(10);
+for ($i = 1; $i <= 25; $i++) {
+    $test3->addSample($i);
+}
+echo "AverageBuffer: \n" . $test3;
+echo "getAverage = " . $test3->getAverage() . ", should be 20.5" . "\n";
+echo "getAverageForever = " . $test3->getAverageForever() . ", should be 13" . "\n";
+echo "getUpperQuarterAverage = " . $test3->getUpperQuarterAverage() . ", should be 24.5" . "\n";
+echo "getLowerQuarterAverage = " . $test3->getLowerQuarterAverage() . ", should be 16.5" . "\n";
