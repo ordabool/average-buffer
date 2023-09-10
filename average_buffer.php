@@ -1,8 +1,5 @@
 <?php
 
-// TODO: Add time complexities for functions
-// TODO: Write calculated tests (with expected output)
-
 /**
  * 
  * AverageBuffer Class 
@@ -15,7 +12,7 @@
  * $sampleCountForever - counts all of the samples that are inserted into the AverageBuffer
  * $size               - holds the size of the AverageBuffer
  *                       There can be less samples than $size at a given moment, but not more
- * $cyclicArray        - an instance of CyclicArray that stores the samples
+ * $cyclicArray        - an instance of CyclicArray that stores the samples in a cyclic manner
  * 
  */
 class AverageBuffer
@@ -36,6 +33,14 @@ class AverageBuffer
     {
         $this->size = $size;
         $this->cyclicArray = new CyclicArray($size);
+    }
+
+    /**
+     * Destroys the AverageBuffer, and specifically it's CyclicArray object
+     */
+    function __destruct()
+    {
+        unset($this->cyclicArray);
     }
 
     /**
@@ -151,14 +156,6 @@ class AverageBuffer
     }
 }
 
-// Enum of the different quarter average types: upper / lower
-enum QuarterAverageType
-{
-    case Upper;
-    case Lower;
-}
-
-
 /**
  * 
  * CyclicArray Class
@@ -235,8 +232,8 @@ class CyclicArray implements ArrayAccess, Countable
     }
 
     /**
-     * Get the cyclic index for a "regular" index argument. Meaning that if $startIndex = x, 
-     * getCyclicIndex(0) will result to x in a cyclic fashion, and so on
+     * Get the cyclic index for a "regular" index argument. Meaning that for $startIndex = x, 
+     * getCyclicIndex(y) will result to ((x+y) % $arraySize) in a cyclic fashion
      * 
      * @param int $regularIndex - the index to convert to a cyclic index
      */
@@ -321,4 +318,11 @@ class CyclicArray implements ArrayAccess, Countable
     {
         return $this->arraySize;
     }
+}
+
+// Helper enum of the different quarter average types: upper / lower
+enum QuarterAverageType
+{
+    case Upper;
+    case Lower;
 }

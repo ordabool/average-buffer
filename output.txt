@@ -1,0 +1,1000 @@
+i = 0, rand = 20
+getAverage = 20
+getAverageForever = 20
+getUpperQuarterAverage = 0
+getLowerQuarterAverage = 0
+i = 1, rand = 43
+getAverage = 31.5
+getAverageForever = 31.5
+getUpperQuarterAverage = 0
+getLowerQuarterAverage = 0
+i = 2, rand = 61
+getAverage = 41.333333333333
+getAverageForever = 41.333333333333
+getUpperQuarterAverage = 0
+getLowerQuarterAverage = 0
+i = 3, rand = 34
+getAverage = 39.5
+getAverageForever = 39.5
+getUpperQuarterAverage = 34
+getLowerQuarterAverage = 20
+i = 4, rand = 44
+getAverage = 40.4
+getAverageForever = 40.4
+getUpperQuarterAverage = 44
+getLowerQuarterAverage = 20
+i = 5, rand = 97
+getAverage = 49.833333333333
+getAverageForever = 49.833333333333
+getUpperQuarterAverage = 97
+getLowerQuarterAverage = 20
+i = 6, rand = 67
+getAverage = 52.285714285714
+getAverageForever = 52.285714285714
+getUpperQuarterAverage = 67
+getLowerQuarterAverage = 20
+i = 7, rand = 16
+getAverage = 47.75
+getAverageForever = 47.75
+getUpperQuarterAverage = 41.5
+getLowerQuarterAverage = 31.5
+i = 8, rand = 51
+getAverage = 48.111111111111
+getAverageForever = 48.111111111111
+getUpperQuarterAverage = 33.5
+getLowerQuarterAverage = 31.5
+i = 9, rand = 82
+getAverage = 51.5
+getAverageForever = 51.5
+getUpperQuarterAverage = 66.5
+getLowerQuarterAverage = 31.5
+i = 10, rand = 17
+getAverage = 48.363636363636
+getAverageForever = 48.363636363636
+getUpperQuarterAverage = 49.5
+getLowerQuarterAverage = 31.5
+i = 11, rand = 64
+getAverage = 49.666666666667
+getAverageForever = 49.666666666667
+getUpperQuarterAverage = 54.333333333333
+getLowerQuarterAverage = 41.333333333333
+i = 12, rand = 32
+getAverage = 48.307692307692
+getAverageForever = 48.307692307692
+getUpperQuarterAverage = 37.666666666667
+getLowerQuarterAverage = 41.333333333333
+i = 13, rand = 46
+getAverage = 48.142857142857
+getAverageForever = 48.142857142857
+getUpperQuarterAverage = 47.333333333333
+getLowerQuarterAverage = 41.333333333333
+i = 14, rand = 89
+getAverage = 50.866666666667
+getAverageForever = 50.866666666667
+getUpperQuarterAverage = 55.666666666667
+getLowerQuarterAverage = 41.333333333333
+i = 15, rand = 76
+getAverage = 52.4375
+getAverageForever = 52.4375
+getUpperQuarterAverage = 60.75
+getLowerQuarterAverage = 39.5
+i = 16, rand = 78
+getAverage = 53.941176470588
+getAverageForever = 53.941176470588
+getUpperQuarterAverage = 72.25
+getLowerQuarterAverage = 39.5
+i = 17, rand = 41
+getAverage = 53.222222222222
+getAverageForever = 53.222222222222
+getUpperQuarterAverage = 71
+getLowerQuarterAverage = 39.5
+i = 18, rand = 40
+getAverage = 52.526315789474
+getAverageForever = 52.526315789474
+getUpperQuarterAverage = 58.75
+getLowerQuarterAverage = 39.5
+i = 19, rand = 5
+getAverage = 50.15
+getAverageForever = 50.15
+getUpperQuarterAverage = 48
+getLowerQuarterAverage = 40.4
+i = 20, rand = 69
+getAverage = 51.047619047619
+getAverageForever = 51.047619047619
+getUpperQuarterAverage = 46.6
+getLowerQuarterAverage = 40.4
+i = 21, rand = 43
+getAverage = 50.681818181818
+getAverageForever = 50.681818181818
+getUpperQuarterAverage = 39.6
+getLowerQuarterAverage = 40.4
+i = 22, rand = 66
+getAverage = 51.347826086957
+getAverageForever = 51.347826086957
+getUpperQuarterAverage = 44.6
+getLowerQuarterAverage = 40.4
+i = 23, rand = 45
+getAverage = 51.083333333333
+getAverageForever = 51.083333333333
+getUpperQuarterAverage = 44.666666666667
+getLowerQuarterAverage = 49.833333333333
+i = 24, rand = 37
+getAverage = 50.52
+getAverageForever = 50.52
+getUpperQuarterAverage = 44.166666666667
+getLowerQuarterAverage = 49.833333333333
+i = 25, rand = 54
+getAverage = 50.653846153846
+getAverageForever = 50.653846153846
+getUpperQuarterAverage = 52.333333333333
+getLowerQuarterAverage = 49.833333333333
+i = 26, rand = 84
+getAverage = 51.888888888889
+getAverageForever = 51.888888888889
+getUpperQuarterAverage = 54.833333333333
+getLowerQuarterAverage = 49.833333333333
+i = 27, rand = 81
+getAverage = 52.928571428571
+getAverageForever = 52.928571428571
+getUpperQuarterAverage = 58.571428571429
+getLowerQuarterAverage = 52.285714285714
+i = 28, rand = 23
+getAverage = 51.896551724138
+getAverageForever = 51.896551724138
+getUpperQuarterAverage = 55.714285714286
+getLowerQuarterAverage = 52.285714285714
+i = 29, rand = 39
+getAverage = 51.466666666667
+getAverageForever = 51.466666666667
+getUpperQuarterAverage = 51.857142857143
+getLowerQuarterAverage = 52.285714285714
+i = 30, rand = 40
+getAverage = 51.096774193548
+getAverageForever = 51.096774193548
+getUpperQuarterAverage = 51.142857142857
+getLowerQuarterAverage = 52.285714285714
+i = 31, rand = 49
+getAverage = 51.03125
+getAverageForever = 51.03125
+getUpperQuarterAverage = 50.875
+getLowerQuarterAverage = 47.75
+i = 32, rand = 73
+getAverage = 51.69696969697
+getAverageForever = 51.69696969697
+getUpperQuarterAverage = 55.375
+getLowerQuarterAverage = 47.75
+i = 33, rand = 91
+getAverage = 52.852941176471
+getAverageForever = 52.852941176471
+getUpperQuarterAverage = 60
+getLowerQuarterAverage = 47.75
+i = 34, rand = 59
+getAverage = 53.028571428571
+getAverageForever = 53.028571428571
+getUpperQuarterAverage = 56.875
+getLowerQuarterAverage = 47.75
+i = 35, rand = 25
+getAverage = 52.25
+getAverageForever = 52.25
+getUpperQuarterAverage = 53.333333333333
+getLowerQuarterAverage = 48.111111111111
+i = 36, rand = 66
+getAverage = 52.621621621622
+getAverageForever = 52.621621621622
+getUpperQuarterAverage = 51.666666666667
+getLowerQuarterAverage = 48.111111111111
+i = 37, rand = 62
+getAverage = 52.868421052632
+getAverageForever = 52.868421052632
+getUpperQuarterAverage = 56
+getLowerQuarterAverage = 48.111111111111
+i = 38, rand = 66
+getAverage = 53.205128205128
+getAverageForever = 53.205128205128
+getUpperQuarterAverage = 59
+getLowerQuarterAverage = 48.111111111111
+i = 39, rand = 74
+getAverage = 53.725
+getAverageForever = 53.725
+getUpperQuarterAverage = 60.5
+getLowerQuarterAverage = 51.5
+i = 40, rand = 17
+getAverage = 52.829268292683
+getAverageForever = 52.829268292683
+getUpperQuarterAverage = 58.2
+getLowerQuarterAverage = 51.5
+i = 41, rand = 45
+getAverage = 52.642857142857
+getAverageForever = 52.642857142857
+getUpperQuarterAverage = 57.8
+getLowerQuarterAverage = 51.5
+i = 42, rand = 20
+getAverage = 51.883720930233
+getAverageForever = 51.883720930233
+getUpperQuarterAverage = 52.5
+getLowerQuarterAverage = 51.5
+i = 43, rand = 42
+getAverage = 51.659090909091
+getAverageForever = 51.659090909091
+getUpperQuarterAverage = 51.545454545455
+getLowerQuarterAverage = 48.363636363636
+i = 44, rand = 76
+getAverage = 52.2
+getAverageForever = 52.2
+getUpperQuarterAverage = 50.181818181818
+getLowerQuarterAverage = 48.363636363636
+i = 45, rand = 1
+getAverage = 51.086956521739
+getAverageForever = 51.086956521739
+getUpperQuarterAverage = 44.909090909091
+getLowerQuarterAverage = 48.363636363636
+i = 46, rand = 2
+getAverage = 50.042553191489
+getAverageForever = 50.042553191489
+getUpperQuarterAverage = 42.818181818182
+getLowerQuarterAverage = 48.363636363636
+i = 47, rand = 95
+getAverage = 50.979166666667
+getAverageForever = 50.979166666667
+getUpperQuarterAverage = 47.166666666667
+getLowerQuarterAverage = 49.666666666667
+i = 48, rand = 16
+getAverage = 50.265306122449
+getAverageForever = 50.265306122449
+getUpperQuarterAverage = 43
+getLowerQuarterAverage = 49.666666666667
+i = 49, rand = 97
+getAverage = 51.2
+getAverageForever = 51.2
+getUpperQuarterAverage = 45.916666666667
+getLowerQuarterAverage = 49.666666666667
+i = 50, rand = 18
+getAverage = 50.549019607843
+getAverageForever = 50.549019607843
+getUpperQuarterAverage = 41.916666666667
+getLowerQuarterAverage = 49.666666666667
+i = 51, rand = 9
+getAverage = 49.75
+getAverageForever = 49.75
+getUpperQuarterAverage = 39.384615384615
+getLowerQuarterAverage = 48.307692307692
+i = 52, rand = 14
+getAverage = 49.075471698113
+getAverageForever = 49.075471698113
+getUpperQuarterAverage = 34.769230769231
+getLowerQuarterAverage = 48.307692307692
+i = 53, rand = 87
+getAverage = 49.777777777778
+getAverageForever = 49.777777777778
+getUpperQuarterAverage = 40.153846153846
+getLowerQuarterAverage = 48.307692307692
+i = 54, rand = 63
+getAverage = 50.018181818182
+getAverageForever = 50.018181818182
+getUpperQuarterAverage = 41.538461538462
+getLowerQuarterAverage = 48.307692307692
+i = 55, rand = 78
+getAverage = 50.517857142857
+getAverageForever = 50.517857142857
+getUpperQuarterAverage = 44.142857142857
+getLowerQuarterAverage = 48.142857142857
+i = 56, rand = 93
+getAverage = 51.263157894737
+getAverageForever = 51.263157894737
+getUpperQuarterAverage = 49.357142857143
+getLowerQuarterAverage = 48.142857142857
+i = 57, rand = 38
+getAverage = 51.034482758621
+getAverageForever = 51.034482758621
+getUpperQuarterAverage = 49.071428571429
+getLowerQuarterAverage = 48.142857142857
+i = 58, rand = 9
+getAverage = 50.322033898305
+getAverageForever = 50.322033898305
+getUpperQuarterAverage = 44.285714285714
+getLowerQuarterAverage = 48.142857142857
+i = 59, rand = 59
+getAverage = 50.466666666667
+getAverageForever = 50.466666666667
+getUpperQuarterAverage = 45.266666666667
+getLowerQuarterAverage = 50.866666666667
+i = 60, rand = 73
+getAverage = 50.83606557377
+getAverageForever = 50.83606557377
+getUpperQuarterAverage = 50.066666666667
+getLowerQuarterAverage = 50.866666666667
+i = 61, rand = 2
+getAverage = 50.048387096774
+getAverageForever = 50.048387096774
+getUpperQuarterAverage = 50.066666666667
+getLowerQuarterAverage = 50.866666666667
+i = 62, rand = 15
+getAverage = 49.492063492063
+getAverageForever = 49.492063492063
+getUpperQuarterAverage = 44.733333333333
+getLowerQuarterAverage = 50.866666666667
+i = 63, rand = 27
+getAverage = 49.140625
+getAverageForever = 49.140625
+getUpperQuarterAverage = 43.625
+getLowerQuarterAverage = 52.4375
+i = 64, rand = 82
+getAverage = 49.646153846154
+getAverageForever = 49.646153846154
+getUpperQuarterAverage = 47.75
+getLowerQuarterAverage = 52.4375
+i = 65, rand = 54
+getAverage = 49.712121212121
+getAverageForever = 49.712121212121
+getUpperQuarterAverage = 45.0625
+getLowerQuarterAverage = 52.4375
+i = 66, rand = 61
+getAverage = 49.880597014925
+getAverageForever = 49.880597014925
+getUpperQuarterAverage = 47.75
+getLowerQuarterAverage = 52.4375
+i = 67, rand = 80
+getAverage = 50.323529411765
+getAverageForever = 50.323529411765
+getUpperQuarterAverage = 49.647058823529
+getLowerQuarterAverage = 53.941176470588
+i = 68, rand = 68
+getAverage = 50.579710144928
+getAverageForever = 50.579710144928
+getUpperQuarterAverage = 53.117647058824
+getLowerQuarterAverage = 53.941176470588
+i = 69, rand = 5
+getAverage = 49.928571428571
+getAverageForever = 49.928571428571
+getUpperQuarterAverage = 52.588235294118
+getLowerQuarterAverage = 53.941176470588
+i = 70, rand = 72
+getAverage = 50.239436619718
+getAverageForever = 50.239436619718
+getUpperQuarterAverage = 51.705882352941
+getLowerQuarterAverage = 53.941176470588
+i = 71, rand = 40
+getAverage = 50.097222222222
+getAverageForever = 50.097222222222
+getUpperQuarterAverage = 51.055555555556
+getLowerQuarterAverage = 53.222222222222
+i = 72, rand = 72
+getAverage = 50.397260273973
+getAverageForever = 50.397260273973
+getUpperQuarterAverage = 51.555555555556
+getLowerQuarterAverage = 53.222222222222
+i = 73, rand = 81
+getAverage = 50.810810810811
+getAverageForever = 50.810810810811
+getUpperQuarterAverage = 51.722222222222
+getLowerQuarterAverage = 53.222222222222
+i = 74, rand = 35
+getAverage = 50.6
+getAverageForever = 50.6
+getUpperQuarterAverage = 48.5
+getLowerQuarterAverage = 53.222222222222
+i = 75, rand = 91
+getAverage = 51.131578947368
+getAverageForever = 51.131578947368
+getUpperQuarterAverage = 50.736842105263
+getLowerQuarterAverage = 52.526315789474
+i = 76, rand = 21
+getAverage = 50.74025974026
+getAverageForever = 50.74025974026
+getUpperQuarterAverage = 49.842105263158
+getLowerQuarterAverage = 52.526315789474
+i = 77, rand = 4
+getAverage = 50.141025641026
+getAverageForever = 50.141025641026
+getUpperQuarterAverage = 49.578947368421
+getLowerQuarterAverage = 52.526315789474
+i = 78, rand = 65
+getAverage = 50.329113924051
+getAverageForever = 50.329113924051
+getUpperQuarterAverage = 49.894736842105
+getLowerQuarterAverage = 52.526315789474
+i = 79, rand = 59
+getAverage = 50.4375
+getAverageForever = 50.4375
+getUpperQuarterAverage = 50.35
+getLowerQuarterAverage = 50.15
+i = 80, rand = 54
+getAverage = 50.481481481481
+getAverageForever = 50.481481481481
+getUpperQuarterAverage = 49.4
+getLowerQuarterAverage = 50.15
+i = 81, rand = 65
+getAverage = 50.658536585366
+getAverageForever = 50.658536585366
+getUpperQuarterAverage = 52.55
+getLowerQuarterAverage = 50.15
+i = 82, rand = 88
+getAverage = 51.10843373494
+getAverageForever = 51.10843373494
+getUpperQuarterAverage = 56.2
+getLowerQuarterAverage = 50.15
+i = 83, rand = 30
+getAverage = 50.857142857143
+getAverageForever = 50.857142857143
+getUpperQuarterAverage = 54.952380952381
+getLowerQuarterAverage = 51.047619047619
+i = 84, rand = 47
+getAverage = 50.811764705882
+getAverageForever = 50.811764705882
+getUpperQuarterAverage = 55.904761904762
+getLowerQuarterAverage = 51.047619047619
+i = 85, rand = 57
+getAverage = 50.883720930233
+getAverageForever = 50.883720930233
+getUpperQuarterAverage = 54.714285714286
+getLowerQuarterAverage = 51.047619047619
+i = 86, rand = 26
+getAverage = 50.597701149425
+getAverageForever = 50.597701149425
+getUpperQuarterAverage = 53.380952380952
+getLowerQuarterAverage = 51.047619047619
+i = 87, rand = 65
+getAverage = 50.761363636364
+getAverageForever = 50.761363636364
+getUpperQuarterAverage = 53.909090909091
+getLowerQuarterAverage = 50.681818181818
+i = 88, rand = 12
+getAverage = 50.325842696629
+getAverageForever = 50.325842696629
+getUpperQuarterAverage = 51.681818181818
+getLowerQuarterAverage = 50.681818181818
+i = 89, rand = 23
+getAverage = 50.022222222222
+getAverageForever = 50.022222222222
+getUpperQuarterAverage = 49.090909090909
+getLowerQuarterAverage = 50.681818181818
+i = 90, rand = 1
+getAverage = 49.483516483516
+getAverageForever = 49.483516483516
+getUpperQuarterAverage = 46.045454545455
+getLowerQuarterAverage = 50.681818181818
+i = 91, rand = 32
+getAverage = 49.29347826087
+getAverageForever = 49.29347826087
+getUpperQuarterAverage = 45.434782608696
+getLowerQuarterAverage = 51.347826086957
+i = 92, rand = 24
+getAverage = 49.021505376344
+getAverageForever = 49.021505376344
+getUpperQuarterAverage = 46.260869565217
+getLowerQuarterAverage = 51.347826086957
+i = 93, rand = 80
+getAverage = 49.351063829787
+getAverageForever = 49.351063829787
+getUpperQuarterAverage = 46.608695652174
+getLowerQuarterAverage = 51.347826086957
+i = 94, rand = 55
+getAverage = 49.410526315789
+getAverageForever = 49.410526315789
+getUpperQuarterAverage = 47.260869565217
+getLowerQuarterAverage = 51.347826086957
+i = 95, rand = 51
+getAverage = 49.427083333333
+getAverageForever = 49.427083333333
+getUpperQuarterAverage = 47.416666666667
+getLowerQuarterAverage = 51.083333333333
+i = 96, rand = 97
+getAverage = 49.917525773196
+getAverageForever = 49.917525773196
+getUpperQuarterAverage = 48.458333333333
+getLowerQuarterAverage = 51.083333333333
+i = 97, rand = 7
+getAverage = 49.479591836735
+getAverageForever = 49.479591836735
+getUpperQuarterAverage = 45.375
+getLowerQuarterAverage = 51.083333333333
+i = 98, rand = 73
+getAverage = 49.717171717172
+getAverageForever = 49.717171717172
+getUpperQuarterAverage = 46.958333333333
+getLowerQuarterAverage = 51.083333333333
+i = 99, rand = 92
+getAverage = 50.14
+getAverageForever = 50.14
+getUpperQuarterAverage = 48.76
+getLowerQuarterAverage = 50.52
+i = 100, rand = 33
+getAverage = 50.27
+getAverageForever = 49.970297029703
+getUpperQuarterAverage = 46.44
+getLowerQuarterAverage = 51.88
+i = 101, rand = 7
+getAverage = 49.91
+getAverageForever = 49.549019607843
+getUpperQuarterAverage = 45.88
+getLowerQuarterAverage = 53.52
+i = 102, rand = 30
+getAverage = 49.6
+getAverageForever = 49.359223300971
+getUpperQuarterAverage = 46.92
+getLowerQuarterAverage = 54.32
+i = 103, rand = 26
+getAverage = 49.52
+getAverageForever = 49.134615384615
+getUpperQuarterAverage = 45.36
+getLowerQuarterAverage = 53.88
+i = 104, rand = 38
+getAverage = 49.46
+getAverageForever = 49.028571428571
+getUpperQuarterAverage = 44.52
+getLowerQuarterAverage = 53.68
+i = 105, rand = 76
+getAverage = 49.25
+getAverageForever = 49.283018867925
+getUpperQuarterAverage = 45.4
+getLowerQuarterAverage = 51.4
+i = 106, rand = 97
+getAverage = 49.55
+getAverageForever = 49.728971962617
+getUpperQuarterAverage = 46.68
+getLowerQuarterAverage = 50.68
+i = 107, rand = 92
+getAverage = 50.31
+getAverageForever = 50.12037037037
+getUpperQuarterAverage = 46.84
+getLowerQuarterAverage = 52.96
+i = 108, rand = 0
+getAverage = 49.8
+getAverageForever = 49.660550458716
+getUpperQuarterAverage = 45.64
+getLowerQuarterAverage = 54.56
+i = 109, rand = 83
+getAverage = 49.81
+getAverageForever = 49.963636363636
+getUpperQuarterAverage = 47.08
+getLowerQuarterAverage = 53.64
+i = 110, rand = 35
+getAverage = 49.99
+getAverageForever = 49.828828828829
+getUpperQuarterAverage = 46.2
+getLowerQuarterAverage = 53.96
+i = 111, rand = 74
+getAverage = 50.09
+getAverageForever = 50.044642857143
+getUpperQuarterAverage = 48.12
+getLowerQuarterAverage = 54.04
+i = 112, rand = 15
+getAverage = 49.92
+getAverageForever = 49.734513274336
+getUpperQuarterAverage = 46.12
+getLowerQuarterAverage = 55.24
+i = 113, rand = 58
+getAverage = 50.04
+getAverageForever = 49.80701754386
+getUpperQuarterAverage = 47.96
+getLowerQuarterAverage = 56.04
+i = 114, rand = 98
+getAverage = 50.13
+getAverageForever = 50.226086956522
+getUpperQuarterAverage = 50.96
+getLowerQuarterAverage = 55.44
+i = 115, rand = 53
+getAverage = 49.9
+getAverageForever = 50.25
+getUpperQuarterAverage = 53.04
+getLowerQuarterAverage = 53.08
+i = 116, rand = 28
+getAverage = 49.4
+getAverageForever = 50.059829059829
+getUpperQuarterAverage = 52.88
+getLowerQuarterAverage = 51.76
+i = 117, rand = 24
+getAverage = 49.23
+getAverageForever = 49.838983050847
+getUpperQuarterAverage = 52.88
+getLowerQuarterAverage = 50.92
+i = 118, rand = 61
+getAverage = 49.44
+getAverageForever = 49.932773109244
+getUpperQuarterAverage = 52.12
+getLowerQuarterAverage = 51
+i = 119, rand = 84
+getAverage = 50.23
+getAverageForever = 50.216666666667
+getUpperQuarterAverage = 53.28
+getLowerQuarterAverage = 53.84
+i = 120, rand = 69
+getAverage = 50.23
+getAverageForever = 50.371900826446
+getUpperQuarterAverage = 54
+getLowerQuarterAverage = 51.12
+i = 121, rand = 16
+getAverage = 49.96
+getAverageForever = 50.090163934426
+getUpperQuarterAverage = 50.76
+getLowerQuarterAverage = 49.48
+i = 122, rand = 32
+getAverage = 49.62
+getAverageForever = 49.943089430894
+getUpperQuarterAverage = 51.76
+getLowerQuarterAverage = 50.64
+i = 123, rand = 68
+getAverage = 49.85
+getAverageForever = 50.088709677419
+getUpperQuarterAverage = 51.56
+getLowerQuarterAverage = 49.48
+i = 124, rand = 18
+getAverage = 49.66
+getAverageForever = 49.832
+getUpperQuarterAverage = 48.6
+getLowerQuarterAverage = 51.88
+i = 125, rand = 34
+getAverage = 49.46
+getAverageForever = 49.706349206349
+getUpperQuarterAverage = 48.64
+getLowerQuarterAverage = 50.44
+i = 126, rand = 84
+getAverage = 49.46
+getAverageForever = 49.976377952756
+getUpperQuarterAverage = 51.72
+getLowerQuarterAverage = 47.44
+i = 127, rand = 83
+getAverage = 49.48
+getAverageForever = 50.234375
+getUpperQuarterAverage = 53.84
+getLowerQuarterAverage = 44.76
+i = 128, rand = 33
+getAverage = 49.58
+getAverageForever = 50.100775193798
+getUpperQuarterAverage = 54.12
+getLowerQuarterAverage = 47.32
+i = 129, rand = 92
+getAverage = 50.11
+getAverageForever = 50.423076923077
+getUpperQuarterAverage = 56.28
+getLowerQuarterAverage = 48.28
+i = 130, rand = 89
+getAverage = 50.6
+getAverageForever = 50.717557251908
+getUpperQuarterAverage = 56.8
+getLowerQuarterAverage = 49.8
+i = 131, rand = 29
+getAverage = 50.4
+getAverageForever = 50.55303030303
+getUpperQuarterAverage = 54.08
+getLowerQuarterAverage = 51.56
+i = 132, rand = 37
+getAverage = 50.04
+getAverageForever = 50.451127819549
+getUpperQuarterAverage = 51.88
+getLowerQuarterAverage = 50.16
+i = 133, rand = 63
+getAverage = 49.76
+getAverageForever = 50.544776119403
+getUpperQuarterAverage = 54.4
+getLowerQuarterAverage = 46.88
+i = 134, rand = 69
+getAverage = 49.86
+getAverageForever = 50.681481481481
+getUpperQuarterAverage = 53.84
+getLowerQuarterAverage = 46.88
+i = 135, rand = 60
+getAverage = 50.21
+getAverageForever = 50.75
+getUpperQuarterAverage = 54.84
+getLowerQuarterAverage = 48.8
+i = 136, rand = 51
+getAverage = 50.06
+getAverageForever = 50.751824817518
+getUpperQuarterAverage = 53.92
+getLowerQuarterAverage = 46.24
+i = 137, rand = 30
+getAverage = 49.74
+getAverageForever = 50.601449275362
+getUpperQuarterAverage = 54.52
+getLowerQuarterAverage = 44.36
+i = 138, rand = 63
+getAverage = 49.71
+getAverageForever = 50.690647482014
+getUpperQuarterAverage = 54.72
+getLowerQuarterAverage = 42.8
+i = 139, rand = 74
+getAverage = 49.71
+getAverageForever = 50.857142857143
+getUpperQuarterAverage = 53.76
+getLowerQuarterAverage = 43.12
+i = 140, rand = 1
+getAverage = 49.55
+getAverageForever = 50.503546099291
+getUpperQuarterAverage = 51.68
+getLowerQuarterAverage = 44.6
+i = 141, rand = 44
+getAverage = 49.54
+getAverageForever = 50.457746478873
+getUpperQuarterAverage = 52.32
+getLowerQuarterAverage = 45.24
+i = 142, rand = 46
+getAverage = 49.8
+getAverageForever = 50.426573426573
+getUpperQuarterAverage = 53.2
+getLowerQuarterAverage = 47.64
+i = 143, rand = 26
+getAverage = 49.64
+getAverageForever = 50.256944444444
+getUpperQuarterAverage = 51.8
+getLowerQuarterAverage = 48.68
+i = 144, rand = 55
+getAverage = 49.43
+getAverageForever = 50.289655172414
+getUpperQuarterAverage = 50.64
+getLowerQuarterAverage = 45.84
+i = 145, rand = 76
+getAverage = 50.18
+getAverageForever = 50.465753424658
+getUpperQuarterAverage = 50.92
+getLowerQuarterAverage = 48.68
+i = 146, rand = 57
+getAverage = 50.73
+getAverageForever = 50.510204081633
+getUpperQuarterAverage = 52.56
+getLowerQuarterAverage = 50.2
+i = 147, rand = 12
+getAverage = 49.9
+getAverageForever = 50.25
+getUpperQuarterAverage = 51.76
+getLowerQuarterAverage = 49.28
+i = 148, rand = 35
+getAverage = 50.09
+getAverageForever = 50.147651006711
+getUpperQuarterAverage = 50.44
+getLowerQuarterAverage = 51.88
+i = 149, rand = 55
+getAverage = 49.67
+getAverageForever = 50.18
+getUpperQuarterAverage = 51.92
+getLowerQuarterAverage = 49.4
+i = 150, rand = 23
+getAverage = 49.72
+getAverageForever = 50
+getUpperQuarterAverage = 51.48
+getLowerQuarterAverage = 52.32
+i = 151, rand = 40
+getAverage = 50.03
+getAverageForever = 49.934210526316
+getUpperQuarterAverage = 49.72
+getLowerQuarterAverage = 52.8
+i = 152, rand = 58
+getAverage = 50.47
+getAverageForever = 49.986928104575
+getUpperQuarterAverage = 48.72
+getLowerQuarterAverage = 52.4
+i = 153, rand = 68
+getAverage = 50.28
+getAverageForever = 50.103896103896
+getUpperQuarterAverage = 50.12
+getLowerQuarterAverage = 51.52
+i = 154, rand = 13
+getAverage = 49.78
+getAverageForever = 49.864516129032
+getUpperQuarterAverage = 46.96
+getLowerQuarterAverage = 51.36
+i = 155, rand = 50
+getAverage = 49.5
+getAverageForever = 49.865384615385
+getUpperQuarterAverage = 45.4
+getLowerQuarterAverage = 50.4
+i = 156, rand = 20
+getAverage = 48.77
+getAverageForever = 49.675159235669
+getUpperQuarterAverage = 45.04
+getLowerQuarterAverage = 49.28
+i = 157, rand = 18
+getAverage = 48.57
+getAverageForever = 49.474683544304
+getUpperQuarterAverage = 44.28
+getLowerQuarterAverage = 51.28
+i = 158, rand = 21
+getAverage = 48.69
+getAverageForever = 49.295597484277
+getUpperQuarterAverage = 42.6
+getLowerQuarterAverage = 52.12
+i = 159, rand = 91
+getAverage = 49.01
+getAverageForever = 49.55625
+getUpperQuarterAverage = 43.48
+getLowerQuarterAverage = 51.64
+i = 160, rand = 98
+getAverage = 49.26
+getAverageForever = 49.857142857143
+getUpperQuarterAverage = 45
+getLowerQuarterAverage = 51
+i = 161, rand = 32
+getAverage = 49.56
+getAverageForever = 49.746913580247
+getUpperQuarterAverage = 44.24
+getLowerQuarterAverage = 51.96
+i = 162, rand = 62
+getAverage = 50.03
+getAverageForever = 49.822085889571
+getUpperQuarterAverage = 45.52
+getLowerQuarterAverage = 53.96
+i = 163, rand = 64
+getAverage = 50.4
+getAverageForever = 49.908536585366
+getUpperQuarterAverage = 45.56
+getLowerQuarterAverage = 53.36
+i = 164, rand = 73
+getAverage = 50.31
+getAverageForever = 50.048484848485
+getUpperQuarterAverage = 45.52
+getLowerQuarterAverage = 51
+i = 165, rand = 26
+getAverage = 50.03
+getAverageForever = 49.903614457831
+getUpperQuarterAverage = 46.52
+getLowerQuarterAverage = 48.88
+i = 166, rand = 26
+getAverage = 49.68
+getAverageForever = 49.760479041916
+getUpperQuarterAverage = 45.8
+getLowerQuarterAverage = 47.72
+i = 167, rand = 18
+getAverage = 49.06
+getAverageForever = 49.571428571429
+getUpperQuarterAverage = 44.68
+getLowerQuarterAverage = 45.48
+i = 168, rand = 32
+getAverage = 48.7
+getAverageForever = 49.467455621302
+getUpperQuarterAverage = 44.92
+getLowerQuarterAverage = 45.96
+i = 169, rand = 93
+getAverage = 49.58
+getAverageForever = 49.723529411765
+getUpperQuarterAverage = 46.44
+getLowerQuarterAverage = 47.96
+i = 170, rand = 55
+getAverage = 49.41
+getAverageForever = 49.754385964912
+getUpperQuarterAverage = 45.6
+getLowerQuarterAverage = 47.12
+i = 171, rand = 58
+getAverage = 49.59
+getAverageForever = 49.802325581395
+getUpperQuarterAverage = 45.64
+getLowerQuarterAverage = 49.4
+i = 172, rand = 31
+getAverage = 49.18
+getAverageForever = 49.693641618497
+getUpperQuarterAverage = 46.4
+getLowerQuarterAverage = 46.8
+i = 173, rand = 90
+getAverage = 49.27
+getAverageForever = 49.925287356322
+getUpperQuarterAverage = 48.6
+getLowerQuarterAverage = 46.48
+i = 174, rand = 45
+getAverage = 49.37
+getAverageForever = 49.897142857143
+getUpperQuarterAverage = 48.2
+getLowerQuarterAverage = 48.76
+i = 175, rand = 73
+getAverage = 49.19
+getAverageForever = 50.028409090909
+getUpperQuarterAverage = 50.2
+getLowerQuarterAverage = 46.44
+i = 176, rand = 42
+getAverage = 49.4
+getAverageForever = 49.983050847458
+getUpperQuarterAverage = 50.28
+getLowerQuarterAverage = 45.88
+i = 177, rand = 46
+getAverage = 49.82
+getAverageForever = 49.960674157303
+getUpperQuarterAverage = 49.8
+getLowerQuarterAverage = 46.92
+i = 178, rand = 12
+getAverage = 49.29
+getAverageForever = 49.748603351955
+getUpperQuarterAverage = 47.56
+getLowerQuarterAverage = 45.36
+i = 179, rand = 12
+getAverage = 48.82
+getAverageForever = 49.538888888889
+getUpperQuarterAverage = 47.52
+getLowerQuarterAverage = 44.52
+i = 180, rand = 70
+getAverage = 48.98
+getAverageForever = 49.651933701657
+getUpperQuarterAverage = 48.32
+getLowerQuarterAverage = 45.4
+i = 181, rand = 82
+getAverage = 49.15
+getAverageForever = 49.82967032967
+getUpperQuarterAverage = 50.8
+getLowerQuarterAverage = 46.68
+i = 182, rand = 34
+getAverage = 48.61
+getAverageForever = 49.743169398907
+getUpperQuarterAverage = 51.44
+getLowerQuarterAverage = 46.84
+i = 183, rand = 66
+getAverage = 48.97
+getAverageForever = 49.83152173913
+getUpperQuarterAverage = 53.24
+getLowerQuarterAverage = 45.64
+i = 184, rand = 75
+getAverage = 49.25
+getAverageForever = 49.967567567568
+getUpperQuarterAverage = 52.6
+getLowerQuarterAverage = 47.08
+i = 185, rand = 86
+getAverage = 49.54
+getAverageForever = 50.161290322581
+getUpperQuarterAverage = 52.12
+getLowerQuarterAverage = 46.2
+i = 186, rand = 80
+getAverage = 50.08
+getAverageForever = 50.320855614973
+getUpperQuarterAverage = 54.04
+getLowerQuarterAverage = 48.12
+i = 187, rand = 92
+getAverage = 50.35
+getAverageForever = 50.542553191489
+getUpperQuarterAverage = 55.24
+getLowerQuarterAverage = 46.12
+i = 188, rand = 37
+getAverage = 50.6
+getAverageForever = 50.470899470899
+getUpperQuarterAverage = 54.16
+getLowerQuarterAverage = 47.96
+i = 189, rand = 30
+getAverage = 50.67
+getAverageForever = 50.363157894737
+getUpperQuarterAverage = 52.44
+getLowerQuarterAverage = 50.96
+i = 190, rand = 5
+getAverage = 50.71
+getAverageForever = 50.125654450262
+getUpperQuarterAverage = 51.6
+getLowerQuarterAverage = 53.04
+i = 191, rand = 23
+getAverage = 50.62
+getAverageForever = 49.984375
+getUpperQuarterAverage = 51.48
+getLowerQuarterAverage = 52.88
+i = 192, rand = 89
+getAverage = 51.27
+getAverageForever = 50.186528497409
+getUpperQuarterAverage = 54.32
+getLowerQuarterAverage = 52.88
+i = 193, rand = 51
+getAverage = 50.98
+getAverageForever = 50.190721649485
+getUpperQuarterAverage = 55.08
+getLowerQuarterAverage = 52.12
+i = 194, rand = 34
+getAverage = 50.77
+getAverageForever = 50.107692307692
+getUpperQuarterAverage = 52.72
+getLowerQuarterAverage = 53.28
+i = 195, rand = 35
+getAverage = 50.61
+getAverageForever = 50.030612244898
+getUpperQuarterAverage = 51.92
+getLowerQuarterAverage = 54
+i = 196, rand = 74
+getAverage = 50.38
+getAverageForever = 50.152284263959
+getUpperQuarterAverage = 52.56
+getLowerQuarterAverage = 50.76
+i = 197, rand = 94
+getAverage = 51.25
+getAverageForever = 50.373737373737
+getUpperQuarterAverage = 55.08
+getLowerQuarterAverage = 51.76
+i = 198, rand = 10
+getAverage = 50.62
+getAverageForever = 50.170854271357
+getUpperQuarterAverage = 51.88
+getLowerQuarterAverage = 51.56
+i = 199, rand = 99
+getAverage = 50.69
+getAverageForever = 50.415
+getUpperQuarterAverage = 54.04
+getLowerQuarterAverage = 48.6

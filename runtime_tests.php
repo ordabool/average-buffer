@@ -1,5 +1,7 @@
 <?php
 
+// Just a couple of runtime tests to see everything functions as expected..
+
 include 'average_buffer.php';
 
 $cycArr = new CyclicArray(10);
