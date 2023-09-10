@@ -106,10 +106,10 @@ class AverageBuffer
     /**
      * Get the quarter average for the given type (upper/lower quarter)
      * 
-     * @param QuarterAverageType $type - the type of the quarter
+     * @param int $type - the type of the quarter
      * @return float the average of the quarter in the AverageBuffer
      */
-    function getQuarterAverage(QuarterAverageType $type): float
+    function getQuarterAverage(int $type): float
     {
         $elementCountInQuarter = floor(count($this->cyclicArray) * 0.25);
         if ($elementCountInQuarter == 0) {
@@ -250,7 +250,7 @@ class CyclicArray implements ArrayAccess, Countable
      * @param mixed $offset - the offset to set
      * @param mixed $value - the value to set
      */
-    function offsetSet(mixed $offset, mixed $value): void
+    function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->append((float)$value);
@@ -270,7 +270,7 @@ class CyclicArray implements ArrayAccess, Countable
      * @param mixed $offset - the offset to check
      * @return bool true if the offeset exists
      */
-    function offsetExists(mixed $offset): bool
+    function offsetExists($offset): bool
     {
         $cyclicIndex = $this->getCyclicIndex((int)$offset);
         if ($cyclicIndex < $this->arraySize) {
@@ -301,7 +301,7 @@ class CyclicArray implements ArrayAccess, Countable
      * @param mixed $offset - the offset to get
      * @return mixed the value at the given offset, or null if doesn't exist
      */
-    function offsetGet($offset): mixed
+    function offsetGet($offset)
     {
         $cyclicIndex = $this->getCyclicIndex((int)$offset);
         return ($cyclicIndex < $this->arraySize) ? $this->data[$cyclicIndex] : null;
@@ -320,9 +320,9 @@ class CyclicArray implements ArrayAccess, Countable
     }
 }
 
-// Helper enum of the different quarter average types: upper / lower
-enum QuarterAverageType
+// Helper class of the different quarter average types: upper / lower (instead of enum)
+class QuarterAverageType
 {
-    case Upper;
-    case Lower;
+    const Upper = 1;
+    const Lower = 2;
 }
