@@ -23,6 +23,10 @@ class AverageBuffer
     private int $size;
     private CyclicArray $cyclicArray;
 
+    // --- Consts decleration ------------------------------------------------------------------------------------------
+    const UPPER_QUARTER = 1;
+    const LOWER_QUARTER = 2;
+
     // --- Public API functions ----------------------------------------------------------------------------------------
     /**
      * Constructs the AverageBuffer with a specified size
@@ -118,7 +122,7 @@ class AverageBuffer
         $sum = 0;
         $lastElementIndex = count($this->cyclicArray) - 1;
         for ($i = 0; $i < $elementCountInQuarter; $i++) {
-            $index = ($type == QuarterAverageType::Upper) ? ($lastElementIndex - $i) : $i;
+            $index = ($type == AverageBuffer::UPPER_QUARTER) ? ($lastElementIndex - $i) : $i;
             $sum += $this->cyclicArray[$index];
         }
         return $sum / $elementCountInQuarter;
@@ -131,7 +135,7 @@ class AverageBuffer
      */
     function getUpperQuarterAverage(): float
     {
-        return $this->getQuarterAverage(QuarterAverageType::Upper);
+        return $this->getQuarterAverage(AverageBuffer::UPPER_QUARTER);
     }
 
     /**
@@ -141,7 +145,7 @@ class AverageBuffer
      */
     function getLowerQuarterAverage(): float
     {
-        return $this->getQuarterAverage(QuarterAverageType::Lower);
+        return $this->getQuarterAverage(AverageBuffer::LOWER_QUARTER);
     }
 
     /**
@@ -318,11 +322,4 @@ class CyclicArray implements ArrayAccess, Countable
     {
         return $this->arraySize;
     }
-}
-
-// Helper class of the different quarter average types: upper / lower (instead of enum)
-class QuarterAverageType
-{
-    const Upper = 1;
-    const Lower = 2;
 }
